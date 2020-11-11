@@ -119,7 +119,6 @@ Training
 Blog
 About
 venv
-*.yml
 .env.dev
 *.sqlite3
 *.session
