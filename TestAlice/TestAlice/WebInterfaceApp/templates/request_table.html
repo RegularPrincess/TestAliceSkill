@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request history</title>
+</head>
+<body>
+<table style="border-spacing: 15px;">
+    <tr>
+        <th>User ID</th>
+        <th>Session ID</th>
+        <th>Request time</th>
+        <th>Command text</th>
+    </tr>
+    {% for item in query_results %}
+    <tr>
+        <td>{{ item.user_id }}</td>
+        <td>{{ item.session_id }}</td>
+        <td>{{ item.request_datetime }}</td>
+        <td>{{ item.command }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
